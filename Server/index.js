@@ -1,19 +1,18 @@
-const express = require('express')
-const cors = require('cors')
-const mongoose = require('mongoose')
-const ItemsRouter = require('./Routers/ItemsRouter')
-const AdminRouter = require('./Routers/AdminUserRouter')
+const express = require("express");
+const cors = require("cors");
+const mongoose = require("mongoose");
+const ItemsRouter = require("./Routers/ItemsRouter");
+const AdminRouter = require("./Routers/AdminUserRouter");
+const ClientRouter = require("./Routers/ClientRouter");
 
-const app = express()
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use(cors())
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 app.use("/carento-main", ItemsRouter);
 app.use("/carento-admins", AdminRouter);
-
-
-
+app.use("/client", ClientRouter);
 
 mongoose
   .connect("mongodb://localhost:27017/carento", {
@@ -23,9 +22,7 @@ mongoose
   .then(() => console.log("MongoDb is connected"))
   .catch(() => console.error("Error connection MongoDb"));
 
-
-
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-    console.log("Server is running", PORT)
-})
+  console.log("Server is running", PORT);
+});

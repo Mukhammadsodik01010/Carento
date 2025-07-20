@@ -63,6 +63,8 @@ const AdminsComponent = () => {
     }
   };
 
+
+  
   useEffect(() => {
     AllAdmins();
   }, []);

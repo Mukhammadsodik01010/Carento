@@ -8,6 +8,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import AdminsComponent from "./Components/Admins";
 import CarentoComponent from "./Components/CarentoData";
+import ClientComponent from "./Components/Client";
+
 
 
 function CustomTabPanel(props) {
@@ -71,7 +73,7 @@ export default function HomeComponent() {
               aria-label="basic tabs example"
             >
               <Tab label="Admin" {...a11yProps(0)} />
-              <Tab label="User" {...a11yProps(1)} />
+              <Tab label="Client" {...a11yProps(1)} />
               <Tab label="Carento Data" {...a11yProps(2)} />
             </Tabs>
           </Box>
@@ -79,7 +81,7 @@ export default function HomeComponent() {
             <AdminsComponent />
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
-            client
+            <ClientComponent/>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={2}>
             <CarentoComponent />

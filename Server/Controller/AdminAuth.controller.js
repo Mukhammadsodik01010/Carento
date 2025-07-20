@@ -1,4 +1,4 @@
-const Admins = require("../Modules/AdminAuth")
+const Admins = require("../Modules/Admin.Module")
 
 
 const AddNewUserAdmin = async (req, res) => {
@@ -47,5 +47,28 @@ const DeleteAdmin = async (req, res) => {
     }
 }
 
+const SignInAdmin = async (req, res) => {
+  const { email, password } = req.body;
+  if (!email || !password) {
+    return res.status(500).json({ message: "Fill all the required places" });
+  }
+  try {
+    const admin = await Admins.findOne({ email });
+    if (!admin || !(await admin.comparePassword(password))) {
+      return res.status(500).json({ message: "invalid email or password" });
+    }
+    return res.status(201).json({ message: "Login successfull" });
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ message: "Error signing in nnnn", error: error.message });
+  }
+};
 
-module.exports = { AddNewUserAdmin, GettingAllAdmins, DeleteAdmin };
+
+module.exports = {
+  AddNewUserAdmin,
+  GettingAllAdmins,
+  DeleteAdmin,
+  SignInAdmin,
+};
