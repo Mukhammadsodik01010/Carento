@@ -17,10 +17,24 @@ export const FlexDiv = styled.div`
   display: flex;
   align-items: center;
   gap: ${(props) => (props.$nogap ? "0" : "10px")};
-  gap: ${(props) => (props.$navMiddle ? "20px" : "10px")};
   padding: ${(props) => (props.$withpadding ? "0 10px" : "0")};
   border-left: ${(props) =>
     props.$borderLeft ? "1px solid rgba(255, 255, 255, 0.30)" : "none"};
+`;
+
+export const FlexDivNav = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+
+  &:hover {
+    background-color:rgba(227, 245, 227, 0.54);
+    padding: 9px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
 `;
 export const SidetopP = styled.p`
   display: flex;

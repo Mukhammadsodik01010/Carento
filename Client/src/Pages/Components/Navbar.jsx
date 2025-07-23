@@ -2,6 +2,7 @@ import React from "react";
 import {
   BgColor,
   FlexDiv,
+  FlexDivNav,
   MenuDiv,
   Navbar,
   SideTop,
@@ -20,6 +21,7 @@ import NavDownArrow from "../../assets/Navbar/navDownArrow.svg";
 import MenuIcon from "../../assets/Navbar/menuIcon.svg";
 import UserIcon from "../../assets/Navbar/userIcon.svg";
 import Logo from "../../assets/favicon.svg";
+import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
@@ -66,37 +68,41 @@ const NavbarComponent = () => {
       </BgColor>
       <div className="Container">
         <Navbar>
-          <FlexDiv>
-            <img src={Logo} alt="Logo" />
-            <SidetopP $Logo>Carento</SidetopP>
-          </FlexDiv>
-          <FlexDiv $navMiddle>
-            <SidetopP $Components>
+          <Link className="navLink" to={"/"}>
+            <FlexDiv>
+              <img src={Logo} alt="Logo" />
+              <SidetopP $Logo>Carento</SidetopP>
+            </FlexDiv>
+          </Link>
+          <FlexDiv $nogap>
+            <FlexDivNav $Components>
               Home
               <img src={NavDownArrow} alt="NavDownArrow    " />
-            </SidetopP>
-            <SidetopP $Components>
+            </FlexDivNav>
+            <FlexDivNav $Components>
               Inventory <img src={NavDownArrow} alt="NavDownArrow   " />
-            </SidetopP>
-            <SidetopP $Components>
+            </FlexDivNav>
+            <FlexDivNav $Components>
               Dealers <img src={NavDownArrow} alt="NavDownArrow " />
-            </SidetopP>
-            <SidetopP $Components>
+            </FlexDivNav>
+            <FlexDivNav $Components>
               Shop <img src={NavDownArrow} alt="NavDownArrow    " />
-            </SidetopP>
-            <SidetopP $Components>
+            </FlexDivNav>
+            <FlexDivNav $Components>
               Pages <img src={NavDownArrow} alt="NavDownArrow   " />
-            </SidetopP>
-            <SidetopP $Components>
+            </FlexDivNav>
+            <FlexDivNav $Components>
               News <img src={NavDownArrow} alt="NavDownArrow    " />
-            </SidetopP>
-            <SidetopP $Components>Contact</SidetopP>
+            </FlexDivNav>
+            <FlexDivNav $Components>Contact</FlexDivNav>
           </FlexDiv>
           <FlexDiv $navMiddle>
-            <FlexDiv>
-              <img src={UserIcon} alt="UserIcon" />
-              <SidetopP $Signin>Sign in</SidetopP>
-            </FlexDiv>
+            <Link className="navLink" to={"/log-in"}>
+              <FlexDivNav className="hoverEffect">
+                <img src={UserIcon} alt="UserIcon" />
+                <SidetopP $Signin>Sign in</SidetopP>
+              </FlexDivNav>
+            </Link>
             <SiteTopButton $navByuton>Add Listing</SiteTopButton>
             <MenuDiv>
               <img src={MenuIcon} alt="MenuIcon" />
