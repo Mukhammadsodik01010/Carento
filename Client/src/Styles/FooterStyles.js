@@ -65,6 +65,10 @@ export const FooterButton = styled.button`
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
+  &:hover {
+    cursor: pointer;
+    background: var(--Button-button-bg-1, rgb(92, 196, 90));
+  }
 `;
 
 export const Line = styled.hr`

@@ -7,12 +7,27 @@
 }
 
 .Container{
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+.ContainerMini{
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 .navLink{
   text-decoration: none;
 }
 
+
+.Hrline{
+  height: 1px;
+ background-color: 1px solid var(--Border-Border-1, #DDE1DE);
+}

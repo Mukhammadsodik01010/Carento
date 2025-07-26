@@ -78,6 +78,10 @@ export const SiteTopButton = styled.button`
   font-style: normal;
   font-weight: ${(props) => (props.$navByuton ? "700" : "500")};
   line-height: 18px;
+  &:hover {
+    cursor: pointer;
+    background: var(--Button-button-bg-1, rgb(92, 196, 90));
+  }
 `;
 
 // Navbar start
@@ -98,4 +102,8 @@ export const MenuDiv = styled.div`
   align-items: center;
   border-radius: 12px;
   background: #70f46d;
+  &:hover {
+    cursor: pointer;
+    background: var(--Button-button-bg-1, rgb(92, 196, 90));
+  }
 `;
