@@ -8,9 +8,9 @@ export const AddsMAin1 = styled.div`
   flex-direction: column;
   justify-content: start;
   padding: 100px;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
-  height: 500px;
+  height: 600px;
   border: none;
   border-radius: 12px;
   background-image: url(${AddsFirstImage});
@@ -25,9 +25,9 @@ export const AddsMAin2 = styled.div`
   flex-direction: column;
   justify-content: start;
   padding: 100px;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
-  height: 500px;
+  height: 600px;
   border: none;
   border-radius: 12px;
   background-image: url(${Chevrolet});
@@ -42,9 +42,9 @@ export const AddsMAin3 = styled.div`
   flex-direction: column;
   justify-content: start;
   padding: 100px;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
-  height: 500px;
+  height: 600px;
   border: none;
   border-radius: 12px;
   background-image: url(${Kia});
@@ -105,6 +105,10 @@ export const AddsCAruselBtn = styled.button`
   font-style: normal;
   font-weight: 700;
   line-height: 26px; /* 162.5% */
+  &:hover {
+    cursor: pointer;
+    background: var(--Button-button-bg-1, rgb(92, 196, 90));
+  }
 `;
 
 export const AddsRightArrowDiv = styled.div`
@@ -131,7 +135,7 @@ export const AddsLeftArrowDiv = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 520px;
+  top: 620px;
   right: 150px;
   z-index: 300;
   width: 40px;

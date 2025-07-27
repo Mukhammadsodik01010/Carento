@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Router from './Router'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router />

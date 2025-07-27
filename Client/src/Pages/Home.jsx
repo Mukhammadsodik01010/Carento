@@ -7,6 +7,11 @@ import MostSearchedComp from "./Components/MostSearched";
 import RentalSystemComp from "./Components/RentalSystem";
 import AddsCaruselComp from "./Components/AddCarusel";
 import GlobalBranchesComp from "./Components/GlobalBranches";
+import FeaturedListingComp from "./Components/FeaturedListing";
+import BrendsComp from "./Components/Brends";
+import AgentsComp from "./Components/Agents";
+import ColculationComp from "./Components/Colculation";
+import TheySayComp from "./Components/TheySay";
 
 
 const HomeComponent = () => {
@@ -19,7 +24,12 @@ const HomeComponent = () => {
       <MostSearchedComp />
       <RentalSystemComp />
       <AddsCaruselComp />
-      <GlobalBranchesComp/>
+      <GlobalBranchesComp />
+      <FeaturedListingComp />
+      <BrendsComp />
+      <AgentsComp />
+      <ColculationComp />
+      <TheySayComp/>
       <FooterComponent />
     </>
   );

@@ -54,21 +54,6 @@ function AddsCaruselComp() {
       <div className="slider-container">
         <Slider {...settings}>
           <div className="ContainerMini">
-            <AddsMAin1>
-              <AddsCaruselP>CAR REVIEW</AddsCaruselP>
-              <AddsCaruselh1>
-                Hyundai Tucson Plug-In Hybrid 2025 review
-              </AddsCaruselh1>
-              <AddsCaruselh6>
-                The Tucson Plug-in Hybrid is easy to drive and provides a
-                sufficient all-electric range.{" "}
-              </AddsCaruselh6>
-              <AddsCAruselBtn>
-                View Details <img src={ArrowCarusel} alt="ArrowCarusel" />
-              </AddsCAruselBtn>
-            </AddsMAin1>
-          </div>
-          <div className="ContainerMini">
             <AddsMAin2>
               <AddsCaruselP>CAR REVIEW</AddsCaruselP>
               <AddsCaruselh1>
@@ -82,6 +67,21 @@ function AddsCaruselComp() {
                 View Details <img src={ArrowCarusel} alt="ArrowCarusel" />
               </AddsCAruselBtn>
             </AddsMAin2>
+          </div>
+          <div className="ContainerMini">
+            <AddsMAin1>
+              <AddsCaruselP>CAR REVIEW</AddsCaruselP>
+              <AddsCaruselh1>
+                Hyundai Tucson Plug-In Hybrid 2025 review
+              </AddsCaruselh1>
+              <AddsCaruselh6>
+                The Tucson Plug-in Hybrid is easy to drive and provides a
+                sufficient all-electric range.{" "}
+              </AddsCaruselh6>
+              <AddsCAruselBtn>
+                View Details <img src={ArrowCarusel} alt="ArrowCarusel" />
+              </AddsCAruselBtn>
+            </AddsMAin1>
           </div>
           <div className="ContainerMini">
             <AddsMAin3>

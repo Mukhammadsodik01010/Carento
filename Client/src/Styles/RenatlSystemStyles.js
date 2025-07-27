@@ -120,4 +120,11 @@ export const RChildButton = styled.button`
   font-style: normal;
   font-weight: 700;
   line-height: 26px; /* 162.5% */
+
+  &:hover {
+    cursor: pointer;
+    background: var(--Button-button-bg-1, rgb(92, 196, 90));
+  }
 `;
+
+
