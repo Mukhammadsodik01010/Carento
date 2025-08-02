@@ -40,6 +40,15 @@ export const AgentsChildTop = styled.div`
   background: #c4c4c4;
 `;
 
+export const AgentsChild = styled.div`
+  border: none;
+  border-radius: 12px;
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+`;
+
 export const AgentsChildTopImg = styled.img`
   width: 292px;
   height: 292px;

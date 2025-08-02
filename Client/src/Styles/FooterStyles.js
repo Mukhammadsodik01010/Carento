@@ -81,6 +81,7 @@ export const FooterRight = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1.3;
+  
 `;
 
 export const FooterFlex = styled.div`
@@ -88,6 +89,7 @@ export const FooterFlex = styled.div`
   gap: 10px;
   align-items: ${(props) => (props.$AlignStart ? "flex-start" : "center")};
   margin-top: ${(props) => (props.$info ? "40px" : "20px")};
+  justify-content: space-between;
 `;
 
 export const InfoP = styled.p`
@@ -111,9 +113,9 @@ export const NumberP = styled.p`
   line-height: 32px;
 `;
 export const FooterComponents = styled.div`
-  flex: 5;
+  flex: 4;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;
 export const ChildsDiv = styled.div`
   display: flex;

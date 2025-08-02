@@ -12,6 +12,8 @@ import BrendsComp from "./Components/Brends";
 import AgentsComp from "./Components/Agents";
 import ColculationComp from "./Components/Colculation";
 import TheySayComp from "./Components/TheySay";
+import HowItWorksComp from "./Components/HowItWorks";
+
 
 
 const HomeComponent = () => {
@@ -29,7 +31,8 @@ const HomeComponent = () => {
       <BrendsComp />
       <AgentsComp />
       <ColculationComp />
-      <TheySayComp/>
+      <TheySayComp />
+      <HowItWorksComp/>
       <FooterComponent />
     </>
   );

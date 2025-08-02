@@ -17,6 +17,7 @@ import {
   FeatureCarImage,
   FeatureChildBottom,
   FeatureChildTop,
+  FeaturedListingChild,
   FeatureHrLine,
   FeatureListing,
   FeatureListingBottom,
@@ -27,6 +28,7 @@ import {
   InsideChildh1,
   InsideChildP,
 } from "../../Styles/FeaturedListing";
+import { Link } from "react-router-dom";
 
 const FeaturedListingComp = () => {
   return (
@@ -38,12 +40,14 @@ const FeaturedListingComp = () => {
             Find the perfect ride for any occasion
           </FeatureListingP>
         </div>
-        <FeatureListingBtn>
-          View More <img src={ArrowBtn} alt="ArrowBtn" />
-        </FeatureListingBtn>
+        <Link to={"/car-details"} className="navLink">
+          <FeatureListingBtn>
+            View More <img src={ArrowBtn} alt="ArrowBtn" />
+          </FeatureListingBtn>
+        </Link>
       </FeatureListingWTop>
       <FeatureListingBottom>
-        <div>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -89,8 +93,8 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
-        <div>
+        </FeaturedListingChild>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -136,8 +140,8 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
-        <div>
+        </FeaturedListingChild>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -183,8 +187,8 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
-        <div>
+        </FeaturedListingChild>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -230,8 +234,8 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
-        <div>
+        </FeaturedListingChild>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -277,8 +281,8 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
-        <div>
+        </FeaturedListingChild>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -324,8 +328,8 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
-        <div>
+        </FeaturedListingChild>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -371,8 +375,8 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
-        <div>
+        </FeaturedListingChild>
+        <FeaturedListingChild>
           <FeatureChildTop>
             <FeatureCarImage src={FeatureCarImg} alt="FeatureCarImg" />
           </FeatureChildTop>
@@ -418,7 +422,7 @@ const FeaturedListingComp = () => {
               <FeatureBookingBtn>Book Now</FeatureBookingBtn>
             </ChildFlexDivJc>
           </FeatureChildBottom>
-        </div>
+        </FeaturedListingChild>
       </FeatureListingBottom>
     </div>
   );

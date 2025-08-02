@@ -7,26 +7,28 @@ padding: 80px 0 80px 0;
 `;
 
 export const BrandsBottom = styled.div`
-display: grid;
-grid-template-areas: "a a a a a a a a a";
-gap: 10px;
-justify-content: space-between;
-margin-top: 30px;
+margin-top: 50px;
 `
 
 export const BrandsChild = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 18px 40px;
+  width: 80%;
+  padding: 18px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
   border: 1px solid var(--Border-Border-1, #dde1de);
   background: var(--Neutral-0, #fff);
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
 `;
 
 export const BrandsImage = styled.img`
 height: 50px;
+width: 100px;
 `
 export const Brandsh1 = styled.h1`
   color: #000;

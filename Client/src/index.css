@@ -24,6 +24,7 @@
 
 .navLink{
   text-decoration: none;
+  color: inherit;
 }
 
 
@@ -34,43 +35,4 @@
 
 
 
-.embla {
-  overflow: hidden;
-  width: 100%;
-}
 
-/* Viewport (mask) for the carousel */
-.embla__viewport {
-  overflow: hidden;
-  width: 100%;
-  cursor: grab;
-}
-
-/* Carousel container holding slides */
-.embla__container {
-  display: flex;
-  gap: 16px;
-  user-select: none;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Each slide wrapper */
-.embla__slide {
-  flex: 0 0 20%; /* 5 slides visible on desktop */
-  box-sizing: border-box;
-  scroll-snap-align: start;
-}
-
-/* Responsive: 2 slides on tablets */
-@media (max-width: 768px) {
-  .embla__slide {
-    flex: 0 0 45%;
-  }
-}
-
-/* Responsive: 1 slide on mobile */
-@media (max-width: 480px) {
-  .embla__slide {
-    flex: 0 0 90%;
-  }
-}

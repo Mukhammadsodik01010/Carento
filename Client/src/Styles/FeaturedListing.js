@@ -10,7 +10,7 @@ export const FeatureListing = styled.h1`
   color: var(--Neutral-1000, #101010);
 
   /* Heading 3/Bold */
-  font-family: Urbanist;
+  font-family: "Urbanist", sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -21,7 +21,7 @@ export const FeatureListingP = styled.p`
   color: var(--Neutral-500, #737373);
 
   /* Text/Font LG/Medium */
-  font-family: Urbanist;
+  font-family: "Urbanist", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -57,6 +57,15 @@ export const FeatureChildTop = styled.div`
   flex-shrink: 0;
   border-radius: 12px 12px 0 0; 
 `;
+ 
+export const FeaturedListingChild = styled.div`
+border:none;
+  border-radius: 12px;
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+`;
 
 export const FeatureCarImage = styled.img`
   width: 294px;
@@ -85,7 +94,7 @@ export const InsideChildh1 = styled.h1`
   color: var(--Neutral-1000, #101010);
 
   /* Text/Font LG/Bold */
-  font-family: Urbanist;
+  font-family: "Urbanist", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -114,7 +123,7 @@ export const InsideChildP = styled.p`
   color: var(--Neutral-500, #737373);
 
   /* Text/Font SM/Medium */
-  font-family: Urbanist;
+  font-family: "Urbanist", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -125,7 +134,7 @@ export const ChildCost = styled.h3`
   color: var(--Neutral-1000, #101010);
 
   /* Heading 6/Bold */
-  font-family: Urbanist;
+  font-family: "Urbanist", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -136,7 +145,7 @@ export const ChildCostSpan = styled.span`
   color: var(--Neutral-500, #737373);
 
   /* Text/Font MD/Medium */
-  font-family: Urbanist;
+  font-family: "Urbanist", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -156,7 +165,7 @@ export const FeatureBookingBtn = styled.button`
   color: var(--Button-button-text-2, #000);
 
   /* Text/Font SM/Bold */
-  font-family: Urbanist;
+  font-family: "Urbanist", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;

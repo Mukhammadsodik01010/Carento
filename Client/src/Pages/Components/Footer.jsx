@@ -33,7 +33,7 @@ import {
 const FooterComponent = () => {
   return (
     <FooterBg>
-      <div className="Container">
+      <div className="ContainerMini">
         <Footer>
           <FlexDiv>
             <TagP>

@@ -12,6 +12,19 @@ export const AddsBotttomdiv = styled.div`
   border-radius: 12px;
   background: var(--Background-bg3, #e3f0ff);
 `;
+export const AddsBotttomdivAllBrends = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 80px 100px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100px;
+`;
+export const AllbrendsBackground = styled.div`
+  background: var(--Background-bg2, #d8f4db);
+`;
 
 export const AddsBottomChild = styled.div`
   display: flex;
